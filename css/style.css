@@ -1,0 +1,197 @@
+@font-face {
+    font-family: menu;
+    src: url(../family/cqvito.ttf);
+}
+@font-face {
+    font-family: schoolname;
+    src: url(../family/PlayfairDisplay-VariableFont_wght.ttf);
+}
+@font-face {
+    font-family: welcome;
+    src: url(../family/bpg_supersquare_mtavruli_2009.ttf);
+}
+@font-face {
+    font-family: hot-topic;
+    src: url(../family/bpg_extrasquare_mtavruli_2009.ttf);
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background: #fdfdfd;
+    color: #1a2636;
+    margin: 0;
+    padding: 0;
+    font-family: welcome, sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Header */
+header {
+    position: sticky;
+    top: 0;
+    height: 4rem;
+    padding: 0 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fdd835;
+    color: black;
+    font-family: menu;
+    border-bottom: 2px solid black;
+    z-index: 1000;
+}
+
+.school-name {
+    font-family: schoolname;
+    font-size: clamp(1.5rem, 3vw, 2rem);
+    font-weight: bold;
+}
+
+.school-name a {
+    text-decoration: none;
+    color: black;
+}
+
+/* Navigation */
+nav {
+    height: 100%;
+}
+
+.nav-list {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+.nav-list li {
+    margin-left: 1.25rem;
+    height: 100%;
+}
+
+.nav-list a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    height: 100%;
+    padding: 0 1rem;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+#selected {
+    background-color: black;
+}
+
+#selected a {
+    background-color: black;
+    color: #fdd835;
+    height: 100%;
+    border-radius: 8px 8px 0 0;
+}
+
+/* Footer */
+footer {
+    color: white;
+    padding-top: 40px;
+    font-family: menu;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    background: linear-gradient(to right, #22223b, #4a4e69);
+    color: #fff;
+    padding: 3.75rem 10vw 2.5rem;
+    border-top: 3px solid #333;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.footer-section {
+    flex: 1 1 200px;
+    min-width: 200px;
+    margin: 10px 30px 10px 0;
+}
+
+.footer-section h4 {
+    margin-bottom: 15px;
+    font-size: 26px;
+    color: #fff;
+    font-family: hot-topic, Arial, sans-serif;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin-bottom: 10px;
+}
+
+.footer-section ul li a {
+  transition: transform 0.3s ease, text-shadow 0.3s ease;
+  display: inline-block; /* needed for transform to work nicely */
+  color: #cfcfcf; /* or your normal link color */
+  text-decoration: none;
+  font-family: menu, sans-serif;
+}
+
+.footer-section ul li a:hover {
+  transform: scale(1.16);
+  text-shadow: 0 0 8px rgba(255, 255, 255, 0.8), 0 0 10px rgba(0, 123, 255, 0.7);
+  color: #ffffff; 
+  text-decoration: underline;
+}
+
+.footer-section p {
+    margin-bottom: 8px;
+    font-size: 15px;
+}
+
+/* Custom class to reset font */
+.notmenu {
+    font-family: none;
+}
+.social-buttons a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+/* Scale up and glow on hover */
+.social-buttons a:hover {
+  transform: scale(1.2);
+  box-shadow: 0 0 10px 3px currentColor;
+}
+
+/* Optional: smooth color fill transition inside SVG */
+.social-buttons a svg {
+  transition: fill 0.3s ease;
+}
+
+/* You can also make the icon fill brighter on hover */
+.social-buttons a:hover svg {
+  fill: #fff !important;
+}

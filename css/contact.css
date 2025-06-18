@@ -1,0 +1,135 @@
+@font-face {
+    font-family: menu;
+    src: url(../family/cqvito.ttf);
+}
+@font-face {
+    font-family: schoolname;
+    src: url(../family/PlayfairDisplay-VariableFont_wght.ttf);
+}
+@font-face {
+    font-family: welcome;
+    src: url(../family/bpg_supersquare_mtavruli_2009.ttf);
+}
+@font-face {
+    font-family: hot-topic;
+    src: url(../family/bpg_extrasquare_mtavruli_2009.ttf);
+}
+body {
+  background: linear-gradient(135deg, #f0f2f5, #d9e2ec);
+  margin: 0;
+  padding: 0;
+}
+.about-intro,
+.about-values,
+.about-team {
+    background: rgba(255, 255, 255, 0.8);
+    margin: 1.5rem auto;
+    padding: 2rem 2.5rem;
+    border-radius: 14px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); 
+    font-family: Arial, sans-serif;
+    transition: background-color 0.3s ease;
+}
+.about-intro:hover,
+.about-values:hover,
+.about-team:hover {
+    background: rgba(255, 255, 255, 0.95);
+}
+.about-intro {
+    background: rgba(255, 255, 255, 0.85);
+    margin-top: 2rem;
+    margin-bottom: 1.5rem;
+    max-width: 1000px;
+}
+
+.about-values {
+    max-width: 1000px;
+}
+
+.about-team {
+    max-width: 700px;
+    margin-bottom: 2.5rem;
+}
+
+.about-intro h2,
+.about-values h2,
+.about-team h2 {
+    margin-bottom: 1rem;
+    font-family: hot-topic, Arial, sans-serif;
+    color: #22223b;
+}
+
+.about-intro h2 {
+    font-size: 2rem;
+}
+
+.about-values h2,
+.about-team h2 {
+    font-size: 1.7rem;
+}
+
+.about-intro ul {
+    margin-top: 1rem;
+    padding-left: 1.2rem;
+}
+
+.about-intro li {
+    margin-bottom: 0.5rem;
+    font-size: 1.1rem;
+}
+
+.about-values form label {
+    display: block;
+    margin-bottom: 0.3rem;
+    font-weight: bold;
+    color: #22223b;
+}
+
+.about-values input[type="text"],
+.about-values input[type="email"],
+.about-values textarea {
+    width: 100%;
+    padding: 0.7em;
+    margin-bottom: 1rem;
+    border: 1px solid #bdbdbd;
+    border-radius: 6px;
+    font-size: 1rem;
+    font-family: inherit;
+    background: #fafafa;
+    transition: border 0.2s;
+}
+
+.about-values input[type="text"]:focus,
+.about-values input[type="email"]:focus,
+.about-values textarea:focus {
+    border: 1.5px solid #fdd835;
+    outline: none;
+}
+
+.about-values button[type="submit"] {
+    background: #fdd835;
+    color: #22223b;
+    border: none;
+    padding: 0.7em 2.2em;
+    border-radius: 6px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.2s, color 0.2s;
+    margin-top: 0.5rem;
+}
+
+.about-values button[type="submit"]:hover {
+    background: #22223b;
+    color: #fdd835;
+}
+
+/* Map Section */
+.about-team iframe {
+    width: 100%;
+    height: 300px;
+    border: 0;
+    border-radius: 10px;
+    margin-top: 1rem;
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
+}

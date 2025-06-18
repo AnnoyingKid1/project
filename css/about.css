@@ -1,0 +1,157 @@
+@font-face {
+    font-family: menu;
+    src: url(../family/cqvito.ttf);
+}
+@font-face {
+    font-family: schoolname;
+    src: url(../family/PlayfairDisplay-VariableFont_wght.ttf);
+}
+@font-face {
+    font-family: welcome;
+    src: url(../family/bpg_supersquare_mtavruli_2009.ttf);
+}
+@font-face {
+    font-family: hot-topic;
+    src: url(../family/bpg_extrasquare_mtavruli_2009.ttf);
+}
+
+body {
+    font-family: welcome;
+    color: #1a2636;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    min-height: 100vh;
+}
+body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: -1;
+    background: rgba(240, 238, 216, 0.616);
+    pointer-events: none;
+}
+
+main {
+    max-width: 900px;
+    margin: 2rem auto;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.07);
+    padding: 2rem;
+}
+
+h1, h2 {
+    color: #ffdc3e;
+    margin-top: 0;
+}
+h3{
+    color: #1a73e8;
+    margin-top: 0;
+}
+ul, ol {
+    padding-left: 2rem;
+}
+
+button, .btn {
+    background: #e67e22; 
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    padding: 0.6em 1.2em;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background 0.2s;
+}
+
+button:hover, .btn:hover {
+    background: #b35400;
+}
+
+/* Banner section */
+.banner {
+    background: linear-gradient(90deg, #1a2636 60%, #ffdc3e 100%);
+    color: #fff;
+    padding: 3rem 0 2rem 0;
+    text-align: center;
+    margin-bottom: 2rem;
+    border-radius: 0 0 20px 20px;
+    box-shadow: 0 4px 16px rgba(26,115,232,0.08);
+}
+
+.banner-content h1 {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.banner-content p {
+    font-size: 1.2rem;
+    margin: 0;
+}
+
+.notmenu {
+    font-weight: bold;
+    color: #ffe082;
+}
+
+/* About sections */
+.about-intro,
+.about-values,
+.about-history,
+.about-team,
+.leadership-section {
+    margin-bottom: 2.5rem;
+}
+
+.about-values ul {
+    list-style: disc inside;
+    margin: 1rem 0 0 0;
+    padding: 0;
+}
+
+.about-values li {
+    margin-bottom: 0.5rem;
+    font-size: 1.05em;
+}
+
+/* Leadership/team grid */
+.team-grid {
+    display: flex;
+    gap: 2rem;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    margin-top: 1.5rem;
+}
+
+.team-member {
+    background: #fff7ed; /* soft orange background */
+    border-radius: 8px;
+    box-shadow: 0 1px 6px rgba(230,126,34,0.08);
+    padding: 1.2rem 1rem;
+    text-align: center;
+    flex: 1 1 220px;
+    max-width: 240px;
+}
+
+.team-member img {
+    width: 90px;
+    height: 90px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-bottom: 0.7rem;
+    border: 3px solid #e67e22;
+}
+
+.team-member h3 {
+    margin: 0.5rem 0 0.2rem 0;
+    font-size: 1.15rem;
+}
+
+.team-member p {
+    margin: 0;
+    color: #1a2636;
+    font-size: 0.98em;
+}
